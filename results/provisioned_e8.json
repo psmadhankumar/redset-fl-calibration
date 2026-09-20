@@ -1,0 +1,417 @@
+{
+  "input": "provisioned_full.parquet",
+  "thresholds": [
+    1000,
+    2000
+  ],
+  "n_repeats": 15,
+  "n_boot": 150,
+  "bin_robustness": {
+    "query_type": {
+      "default": {
+        "minq1000": {
+          "n": 143,
+          "alpha": 3.359,
+          "ci": [
+            2.861,
+            3.962
+          ],
+          "obs_js": 0.4199
+        },
+        "minq2000": {
+          "n": 131,
+          "alpha": 3.411,
+          "ci": [
+            2.92,
+            4.292
+          ],
+          "obs_js": 0.4141
+        }
+      },
+      "grouped6": {
+        "minq1000": {
+          "n": 143,
+          "alpha": 3.174,
+          "ci": [
+            2.733,
+            3.8
+          ],
+          "obs_js": 0.3569
+        },
+        "minq2000": {
+          "n": 131,
+          "alpha": 3.481,
+          "ci": [
+            2.829,
+            4.184
+          ],
+          "obs_js": 0.3412
+        }
+      }
+    },
+    "scan_volume": {
+      "default6": {
+        "minq1000": {
+          "n": 143,
+          "alpha": 2.634,
+          "ci": [
+            2.051,
+            3.154
+          ],
+          "obs_js": 0.3141
+        },
+        "minq2000": {
+          "n": 131,
+          "alpha": 3.042,
+          "ci": [
+            2.484,
+            3.835
+          ],
+          "obs_js": 0.2821
+        }
+      },
+      "coarse3": {
+        "minq1000": {
+          "n": 143,
+          "alpha": 2.056,
+          "ci": [
+            1.691,
+            2.718
+          ],
+          "obs_js": 0.2464
+        },
+        "minq2000": {
+          "n": 131,
+          "alpha": 2.527,
+          "ci": [
+            2.076,
+            3.086
+          ],
+          "obs_js": 0.2176
+        }
+      },
+      "coarse2": {
+        "minq1000": {
+          "n": 143,
+          "alpha": 3.094,
+          "ci": [
+            2.118,
+            4.38
+          ],
+          "obs_js": 0.0982
+        },
+        "minq2000": {
+          "n": 131,
+          "alpha": 3.142,
+          "ci": [
+            2.474,
+            4.794
+          ],
+          "obs_js": 0.0934
+        }
+      }
+    },
+    "joins": {
+      "default4": {
+        "minq1000": {
+          "n": 143,
+          "alpha": 8.001,
+          "ci": [
+            6.901,
+            9.785
+          ],
+          "obs_js": 0.0805
+        },
+        "minq2000": {
+          "n": 131,
+          "alpha": 9.876,
+          "ci": [
+            8.022,
+            12.475
+          ],
+          "obs_js": 0.0716
+        }
+      },
+      "fine6": {
+        "minq1000": {
+          "n": 143,
+          "alpha": 9.288,
+          "ci": [
+            7.403,
+            11.394
+          ],
+          "obs_js": 0.0846
+        },
+        "minq2000": {
+          "n": 131,
+          "alpha": 10.86,
+          "ci": [
+            9.08,
+            14.405
+          ],
+          "obs_js": 0.0764
+        }
+      },
+      "coarse2": {
+        "minq1000": {
+          "n": 143,
+          "alpha": 7.459,
+          "ci": [
+            5.921,
+            9.105
+          ],
+          "obs_js": 0.0429
+        },
+        "minq2000": {
+          "n": 131,
+          "alpha": 7.458,
+          "ci": [
+            6.03,
+            9.447
+          ],
+          "obs_js": 0.0442
+        }
+      }
+    },
+    "hour_of_day": {
+      "default24": {
+        "minq1000": {
+          "n": 143,
+          "alpha": 11.447,
+          "ci": [
+            8.673,
+            16.169
+          ],
+          "obs_js": 0.4323
+        },
+        "minq2000": {
+          "n": 131,
+          "alpha": 15.65,
+          "ci": [
+            11.707,
+            21.694
+          ],
+          "obs_js": 0.3587
+        }
+      },
+      "blocks8": {
+        "minq1000": {
+          "n": 143,
+          "alpha": 4.659,
+          "ci": [
+            3.44,
+            6.125
+          ],
+          "obs_js": 0.3538
+        },
+        "minq2000": {
+          "n": 131,
+          "alpha": 6.264,
+          "ci": [
+            4.59,
+            9.11
+          ],
+          "obs_js": 0.2928
+        }
+      },
+      "blocks4": {
+        "minq1000": {
+          "n": 143,
+          "alpha": 2.939,
+          "ci": [
+            2.147,
+            3.824
+          ],
+          "obs_js": 0.2695
+        },
+        "minq2000": {
+          "n": 131,
+          "alpha": 3.82,
+          "ci": [
+            2.829,
+            5.216
+          ],
+          "obs_js": 0.2235
+        }
+      }
+    }
+  },
+  "per_proxy_clustering": {
+    "query_type": {
+      "per_k": [
+        {
+          "k": 2,
+          "silhouette": 0.301,
+          "separation_ratio": 1.497
+        },
+        {
+          "k": 3,
+          "silhouette": 0.285,
+          "separation_ratio": 1.664
+        },
+        {
+          "k": 4,
+          "silhouette": 0.292,
+          "separation_ratio": 1.773
+        },
+        {
+          "k": 5,
+          "silhouette": 0.313,
+          "separation_ratio": 2.104
+        },
+        {
+          "k": 6,
+          "silhouette": 0.328,
+          "separation_ratio": 2.258
+        },
+        {
+          "k": 7,
+          "silhouette": 0.266,
+          "separation_ratio": 2.378
+        },
+        {
+          "k": 8,
+          "silhouette": 0.308,
+          "separation_ratio": 2.341
+        }
+      ],
+      "best": {
+        "k": 6,
+        "silhouette": 0.328,
+        "separation_ratio": 2.258
+      }
+    },
+    "scan_volume": {
+      "per_k": [
+        {
+          "k": 2,
+          "silhouette": 0.267,
+          "separation_ratio": 1.796
+        },
+        {
+          "k": 3,
+          "silhouette": 0.302,
+          "separation_ratio": 2.128
+        },
+        {
+          "k": 4,
+          "silhouette": 0.339,
+          "separation_ratio": 2.632
+        },
+        {
+          "k": 5,
+          "silhouette": 0.379,
+          "separation_ratio": 3.138
+        },
+        {
+          "k": 6,
+          "silhouette": 0.399,
+          "separation_ratio": 3.86
+        },
+        {
+          "k": 7,
+          "silhouette": 0.404,
+          "separation_ratio": 4.228
+        },
+        {
+          "k": 8,
+          "silhouette": 0.377,
+          "separation_ratio": 4.565
+        }
+      ],
+      "best": {
+        "k": 7,
+        "silhouette": 0.404,
+        "separation_ratio": 4.228
+      }
+    },
+    "joins": {
+      "per_k": [
+        {
+          "k": 2,
+          "silhouette": 0.434,
+          "separation_ratio": 1.873
+        },
+        {
+          "k": 3,
+          "silhouette": 0.487,
+          "separation_ratio": 3.002
+        },
+        {
+          "k": 4,
+          "silhouette": 0.443,
+          "separation_ratio": 3.438
+        },
+        {
+          "k": 5,
+          "silhouette": 0.455,
+          "separation_ratio": 3.72
+        },
+        {
+          "k": 6,
+          "silhouette": 0.39,
+          "separation_ratio": 3.718
+        },
+        {
+          "k": 7,
+          "silhouette": 0.388,
+          "separation_ratio": 4.163
+        },
+        {
+          "k": 8,
+          "silhouette": 0.398,
+          "separation_ratio": 4.393
+        }
+      ],
+      "best": {
+        "k": 3,
+        "silhouette": 0.487,
+        "separation_ratio": 3.002
+      }
+    },
+    "hour_of_day": {
+      "per_k": [
+        {
+          "k": 2,
+          "silhouette": 0.461,
+          "separation_ratio": 1.882
+        },
+        {
+          "k": 3,
+          "silhouette": 0.489,
+          "separation_ratio": 2.069
+        },
+        {
+          "k": 4,
+          "silhouette": 0.51,
+          "separation_ratio": 2.209
+        },
+        {
+          "k": 5,
+          "silhouette": 0.53,
+          "separation_ratio": 2.606
+        },
+        {
+          "k": 6,
+          "silhouette": 0.545,
+          "separation_ratio": 2.515
+        },
+        {
+          "k": 7,
+          "silhouette": 0.559,
+          "separation_ratio": 2.747
+        },
+        {
+          "k": 8,
+          "silhouette": 0.586,
+          "separation_ratio": 2.863
+        }
+      ],
+      "best": {
+        "k": 8,
+        "silhouette": 0.586,
+        "separation_ratio": 2.863
+      }
+    }
+  }
+}

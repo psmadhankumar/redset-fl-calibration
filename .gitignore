@@ -1,0 +1,13 @@
+# raw Redset traces are not redistributed here (see README) - keep them out of git
+*.parquet
+data/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# os / editor cruft
+.DS_Store
+*.log
