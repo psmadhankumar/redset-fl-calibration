@@ -3,9 +3,7 @@
 Realistic, never-pooled client partitions for federated-learning experiments,
 calibrated against the Amazon Redset trace, plus the code that produced them.
 
-This is the companion repository for the paper *How Non-IID Is Real Data? A
-Multi-Dimensional Calibration of Federated Learning's Heterogeneity Assumptions
-on a Production Fleet* (under review). Link and citation will be added once the
+This is the companion repository for the paper *Calibrating the Dirichlet Non-IID Assumption Against a Real Production Fleet* (under review). Link and citation will be added once the
 paper is public.
 
 ## What this is, in one paragraph
@@ -102,8 +100,8 @@ Citation will be finalized when the paper is public. For now:
 
 ```
 @misc{subramanian2026noniid,
-  title  = {How Non-IID Is Real Data? A Multi-Dimensional Calibration of
-            Federated Learning's Heterogeneity Assumptions on a Production Fleet},
+  title  = {Calibrating the Dirichlet Non-IID Assumption Against a Real
+            Production Fleet},
   author = {Madhankumar Ponmudi Subramanian},
   year   = {2026},
   note   = {Under review}
