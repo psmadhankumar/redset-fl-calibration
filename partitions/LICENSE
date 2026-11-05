@@ -1,0 +1,31 @@
+Data license: Creative Commons Attribution-NonCommercial 4.0 International
+(CC BY-NC 4.0)
+
+The partition files in this directory (and its subdirectories) are derived from
+the Amazon Redset dataset and are licensed under CC BY-NC 4.0. You may copy,
+share, and adapt these files for non-commercial purposes, provided you give
+appropriate credit and indicate if changes were made. Commercial use is not
+permitted.
+
+  Full legal text: https://creativecommons.org/licenses/by-nc/4.0/legalcode
+  Summary:         https://creativecommons.org/licenses/by-nc/4.0/
+
+Source and attribution
+-----------------------
+These files are derived from Amazon Redset, released by Amazon under
+CC BY-NC 4.0:
+
+  A. van Renen et al., "Why TPC Is Not Enough: An Analysis of the Amazon
+  Redshift Fleet," Proceedings of the VLDB Endowment, vol. 17, no. 11,
+  pp. 3694-3706, 2024.
+  Dataset: https://github.com/amazon-science/redset
+
+Redset is a busy-ness-weighted sample, and an instance does not necessarily
+correspond to a single customer. Treat these partitions as a realistic but
+partial view of the fleet, not a census.
+
+Note on code
+------------
+This data license applies only to the partition files under partitions/. The
+source code in this repository (under code/) is licensed separately under the
+MIT license; see the top-level LICENSE file.
